@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arch4EAI - Architecture for Embodied AI</title>
+    <!-- 引入Tailwind CSS框架 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入Google Fonts字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 定义基础字体 */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* 定义一个细微的背景网格效果，增加质感 */
+        .grid-background {
+            background-image:
+                linear-gradient(to right, rgba(230, 230, 230, 0.4) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(230, 230, 230, 0.4) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- =========== 导航栏部分 =========== -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-gray-900">
+                Arch<span class="text-blue-600">4</span>EAI
+            </a>
+            <!-- 导航链接 -->
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#mission" class="text-gray-600 hover:text-blue-600 transition-colors">Mission</a>
+                <a href="#publications" class="text-gray-600 hover:text-blue-600 transition-colors">Publications</a>
+                <a href="#tutorial" class="text-gray-600 hover:text-blue-600 transition-colors">Tutorial</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Get Involved</a>
+            </nav>
+            <!-- 移动端菜单按钮 (暂未实现功能) -->
+            <div class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========== 主体内容部分 =========== -->
+    <main>
+        <!-- =========== Hero区域: 网站最顶部的欢迎区域 =========== -->
+        <section class="relative py-20 md:py-32 bg-gray-50 overflow-hidden">
+            <div class="grid-background absolute inset-0"></div>
+            <div class="container mx-auto px-6 relative">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- 左侧文字内容 -->
+                    <div>
+                        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                            Building Efficient Systems for Tomorrow's Embodied AI
+                        </h1>
+                        <p class="mt-6 text-lg text-gray-600">
+                            Moving beyond algorithmic success rates to focus on efficiency, scalability, and latency. We are a community of researchers dedicated to pioneering computer architecture and systems for practical embodied intelligence.
+                        </p>
+                        <div class="mt-8 flex space-x-4">
+                            <a href="#tutorial" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-all">
+                                Start the Tutorial
+                            </a>
+                            <a href="#publications" class="bg-white text-gray-700 font-semibold px-6 py-3 rounded-lg border border-gray-300 hover:bg-gray-100 transition-all">
+                                View Publications
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 右侧图片/动画占位符 -->
+                    <div class="hidden md:block bg-white p-4 rounded-xl shadow-lg border border-gray-200">
+                         <!-- 这里可以放一张能代表“体系结构”或“机器人”的图片 -->
+                        <div class="aspect-w-16 aspect-h-9 rounded-lg bg-gray-200 flex items-center justify-center">
+                            <svg class="w-24 h-24 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Mission/使命区域 =========== -->
+        <section id="mission" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">Our Mission</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
+                    To foster a collaborative community that advances the co-design of hardware, software, and systems for efficient, scalable, and low-latency embodied AI. We bridge the gap between AI algorithms and real-world robotic deployment.
+                </p>
+            </div>
+        </section>
+
+        <!-- =========== Publications/论文列表区域 =========== -->
+        <section id="publications" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-900">Core Publications</h2>
+                <p class="mt-4 text-center max-w-3xl mx-auto text-gray-600">Our foundational research that shapes the direction of this community.</p>
+                <div class="mt-12 grid md:grid-cols-3 gap-8">
+                    <!-- 论文 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <span class="text-sm font-semibold text-blue-600">ASPLOS 2025</span>
+                        <h3 class="mt-2 text-xl font-bold">Specific Optimizations for Embodied Compute</h3>
+                        <p class="mt-2 text-gray-600">A deep dive into concrete hardware/software co-design strategies that yield significant improvements in performance and efficiency for embodied AI tasks.</p>
+                        <a href="#" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">Read Paper &rarr;</a>
+                    </div>
+                    <!-- 论文 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <span class="text-sm font-semibold text-blue-600">ISPASS 2025</span>
+                        <h3 class="mt-2 text-xl font-bold">A Systematic Analysis of Embodied AI Compute</h3>
+                        <p class="mt-2 text-gray-600">This work provides a comprehensive analysis of the computational bottlenecks in modern embodied AI workloads and proposes methodologies for efficient system design.</p>
+                        <a href="#" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">Read Paper &rarr;</a>
+                    </div>
+                    <!-- 论文 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <span class="text-sm font-semibold text-blue-600">ICCAD 2024</span>
+                        <h3 class="mt-2 text-xl font-bold">Initial Exploration into Hardware Acceleration for EAI</h3>
+                        <p class="mt-2 text-gray-600">Our preliminary investigation into custom hardware solutions, demonstrating the potential for significant gains over general-purpose processors.</p>
+                        <a href="#" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">Read Paper &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- =========== Tutorial/教程区域 =========== -->
+        <section id="tutorial" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-900">Community Tutorial</h2>
+                    <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
+                        Dive into our comprehensive tutorial based on our ISPASS and ASPLOS papers. Learn how to analyze, profile, and optimize systems for embodied intelligence.
+                    </p>
+                </div>
+                <div class="mt-12 max-w-4xl mx-auto bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:flex-shrink-0 flex items-center justify-center p-8 bg-blue-50">
+                            <svg class="h-24 w-24 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6.253v11.494m-9-5.747h18M5.455 5.455L18.545 18.545M5.455 18.545L18.545 5.455"/></svg>
+                        </div>
+                        <div class="p-8">
+                            <div class="uppercase tracking-wide text-sm text-blue-600 font-semibold">Step-by-Step Guide</div>
+                            <h3 class="mt-1 block text-2xl leading-tight font-bold text-black">From Bottlenecks to Breakthroughs</h3>
+                            <p class="mt-4 text-gray-600">This tutorial covers the full stack, from identifying performance limiters in EAI workloads to implementing targeted hardware and software optimizations. Perfect for students, researchers, and engineers entering the field.</p>
+                             <a href="#" class="mt-6 inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-all">
+                                Access Tutorial on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Get Involved/加入我们区域 =========== -->
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">Join the Community</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                    Whether you are an academic researcher, a student, or an industry practitioner, we welcome you to join our mailing list, contribute to our projects, and shape the future of efficient embodied AI.
+                </p>
+                <div class="mt-8">
+                    <a href="#" class="bg-gray-800 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-gray-900 transition-all">
+                        Join our Mailing List
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========== 页脚部分 =========== -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Arch4EAI Community. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">A community initiative advised by Prof. Vijay Janapa Reddi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
