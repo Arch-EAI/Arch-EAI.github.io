@@ -104,37 +104,49 @@
         </section>
 
 
-        <!-- =========== Publications/论文列表区域 =========== -->
+        <!-- =========== Publications/论文列表区域 (内容优化后) =========== -->
         <section id="publications" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-gray-900">Core Publications</h2>
-                <p class="mt-4 text-center max-w-3xl mx-auto text-gray-600">Our foundational research that shapes the direction of this community.</p>
+                <h2 class="text-3xl font-bold text-center text-gray-900">Our Foundational Research</h2>
+                <p class="mt-4 text-center max-w-3xl mx-auto text-gray-600">
+                    Our work establishes the critical need for system-level optimizations in Embodied AI and provides a concrete framework for achieving real-time performance and scalability.
+                </p>
                 <div class="mt-12 grid md:grid-cols-3 gap-8">
-                    <!-- 论文 1 -->
-                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                        <span class="text-sm font-semibold text-blue-600">ASPLOS 2025</span>
-                        <h3 class="mt-2 text-xl font-bold">Specific Optimizations for Embodied Compute</h3>
-                        <p class="mt-2 text-gray-600">A deep dive into concrete hardware/software co-design strategies that yield significant improvements in performance and efficiency for embodied AI tasks.</p>
-                        <a href="https://dl.acm.org/doi/abs/10.1145/3676641.3716016" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">Read Paper &rarr;</a>
+
+                    <!-- 论文 1: ASPLOS 2025 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col justify-between">
+                        <div>
+                            <span class="text-sm font-semibold text-blue-600">ASPLOS 2025</span>
+                            <h3 class="mt-2 text-xl font-bold">ReCA: A Co-Design Framework for Acceleration</h3>
+                            <p class="mt-2 text-gray-600">This paper introduces ReCA, an integrated co-design framework that accelerates cooperative embodied agents. By optimizing across the algorithm, system, and hardware layers, ReCA achieves a 10.2x speedup and a 4.3% increase in mission success, enabling real-time, scalable agent deployment.</p>
+                        </div>
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3676641.3716016" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">Read Paper &rarr;</a>
                     </div>
-                    <!-- 论文 2 -->
-                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                        <span class="text-sm font-semibold text-blue-600">ISPASS 2025</span>
-                        <h3 class="mt-2 text-xl font-bold">A Systematic Analysis of Embodied AI Compute</h3>
-                        <p class="mt-2 text-gray-600">This work provides a comprehensive analysis of the computational bottlenecks in modern embodied AI workloads and proposes methodologies for efficient system design.</p>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/11096365" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">Read Paper &rarr;</a>
+
+                    <!-- 论文 2: ISPASS 2025 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col justify-between">
+                        <div>
+                            <span class="text-sm font-semibold text-blue-600">ISPASS 2025</span>
+                            <h3 class="mt-2 text-xl font-bold">System-Level Analysis of Embodied AI</h3>
+                            <p class="mt-2 text-gray-600">Presenting the first comprehensive system-level analysis of Embodied AI agents. We profile various paradigms, identify key bottlenecks like latency and scalability, and propose concrete optimization strategies to guide future efficient and scalable system design.</p>
+                        </div>
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3676536.3698389" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">Read Paper &rarr;</a>
                     </div>
-                    <!-- 论文 3 -->
-                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                        <span class="text-sm font-semibold text-blue-600">ICCAD 2024</span>
-                        <h3 class="mt-2 text-xl font-bold">Initial Exploration into Hardware Acceleration for EAI</h3>
-                        <p class="mt-2 text-gray-600">Our preliminary investigation into custom hardware solutions, demonstrating the potential for significant gains over general-purpose processors.</p>
-                        <a href="https://dl.acm.org/doi/abs/10.1145/3676536.3698389" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">Read Paper &rarr;</a>
+
+                    <!-- 论文 3: ICCAD 2024 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col justify-between">
+                        <div>
+                            <span class="text-sm font-semibold text-blue-600">ICCAD 2024</span>
+                            <h3 class="mt-2 text-xl font-bold">Thinking and Moving: An Efficient Computing Approach</h3>
+                            <p class="mt-2 text-gray-600">This work identifies critical inefficiencies in cooperative embodied systems, such as redundant communication. We propose and validate system-level optimizations, including a "planning-first" strategy, achieving a 3.93x speedup in task execution.</p>
+                        </div>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/11096365" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">Read Paper &rarr;</a>
                     </div>
+
                 </div>
             </div>
         </section>
-        
+
         <!-- =========== Tutorial/教程区域 =========== -->
         <section id="tutorial" class="py-20">
             <div class="container mx-auto px-6">
